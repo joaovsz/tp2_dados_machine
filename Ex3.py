@@ -5,7 +5,7 @@ class Questao3:
     def __init__(self):
         self.processor = BaseProcessor()
 
-    def executar(self):
+    def regularizar_l2(self):
         X, _ = self.processor.get_iris_data()
 
         X_l2_normalized = self.processor.normalize_data(X, norm_type='l2')
@@ -24,4 +24,4 @@ class Questao3:
 
 if __name__ == "__main__":
     questao = Questao3()
-    questao.executar()
+    questao.regularizar_l2()

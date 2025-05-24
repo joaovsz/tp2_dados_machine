@@ -5,7 +5,7 @@ class Questao5:
     def __init__(self):
         self.processor = BaseProcessor()
 
-    def executar(self):
+    def filtrar_features(self):
         X, y = self.processor.get_cancer_data()
 
         correlations = self.processor.calculate_correlation(X, y)
@@ -16,4 +16,4 @@ class Questao5:
 
 if __name__ == "__main__":
     questao = Questao5()
-    questao.executar()
+    questao.filtrar_features()

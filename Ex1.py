@@ -5,7 +5,7 @@ class Questao1:
     def __init__(self):
         self.processor = BaseProcessor()
 
-    def executar(self):
+    def normalizar_dados(self):
         X, _ = self.processor.get_iris_data()
 
         print("Dados originais:")
@@ -29,4 +29,4 @@ class Questao1:
 
 if __name__ == "__main__":
     questao = Questao1()
-    questao.executar()
+    questao.normalizar_dados()

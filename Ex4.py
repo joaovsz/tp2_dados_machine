@@ -5,7 +5,7 @@ class Questao4:
     def __init__(self):
         self.processor = BaseProcessor()
 
-    def executar(self):
+    def regularizar_l1(self):
         X, _ = self.processor.get_iris_data()
 
         # Regularização L1
@@ -30,4 +30,4 @@ class Questao4:
 
 if __name__ == "__main__":
     questao = Questao4()
-    questao.executar()
+    questao.regularizar_l1()

@@ -5,7 +5,7 @@ class Questao2:
     def __init__(self):
         self.processor = BaseProcessor()
 
-    def executar(self):
+    def comparar_normalizacoes(self):
         X, _ = self.processor.get_iris_data()
 
         X_manual_scaled = self.processor.manual_standard_scaler(X)
@@ -19,4 +19,4 @@ class Questao2:
 
 if __name__ == "__main__":
     questao = Questao2()
-    questao.executar()
+    questao.comparar_normalizacoes()
